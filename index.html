@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroVerdade | Combate às Fake News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                🌱 AgroVerdade
+            </div>
+
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#fake-news">Fake News</a></li>
+                <li><a href="#identificar">Como identificar</a></li>
+                <li><a href="#ia">IA Agro</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <section id="inicio" class="hero">
+        <div class="hero-content"><span class="tag">
+                🌱 INFORMAÇÃO NO CAMPO
+            </span>
+
+            <h1>
+                A verdade também faz parte do agro.
+            </h1>
+
+            <p>
+                Informação correta ajuda produtores, estudantes e consumidores
+                a tomar melhores decisões.
+            </p>
+
+            <a href="#fake-news" class="btn">
+                Conheça o projeto
+            </a>
+
+        </div>
+    </section>
+    <section id="fake-news" class="section">
+        <div class="section-title"><span>🚨 FAKE NEWS NO AGRO</span>
+
+            <h2>
+                Informação falsa também pode prejudicar o campo.
+            </h2>
+
+            <p>
+                Notícias falsas podem causar decisões erradas, prejuízos
+                econômicos e desinformação.
+            </p>
+
+        </div>
+        <div class="cards">
+            <div class="card">
+
+                <div class="icon">📰</div>
+
+                <h3>
+                    Informações falsas
+                </h3>
+
+                <p>
+                    Uma informação compartilhada muitas vezes não significa
+                    que ela seja verdadeira.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">🌾</div>
+
+                <h3>
+                    Impacto no agro
+                </h3>
+
+                <p>
+                    Notícias falsas podem influenciar produtores e consumidores
+                    em decisões importantes.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">🔎</div>
+
+                <h3>
+                    Verificação
+                </h3>
+
+                <p>
+                    Antes de compartilhar, procure fontes confiáveis e compare
+                    diferentes informações.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="section examples">
+        <div class="section-title"><span>🔎 EXEMPLOS</span>
+
+            <h2>
+                Nem toda informação que parece verdadeira é verdadeira.
+            </h2>
+
+        </div>
+        <div class="example-grid">
+            <div class="example-card fake">
+
+                <div class="example-header">
+
+                    <span class="status fake-status">
+                        ❌ FAKE NEWS
+                    </span>
+
+                </div>
+
+                <h3>
+                    "Toda planta daninha deve ser eliminada imediatamente."
+                </h3>
+
+                <p>
+                    Essa afirmação generaliza o manejo das plantas daninhas.
+                    O controle depende da espécie, cultura, estágio e situação
+                    da lavoura.
+                </p>
+
+                <button onclick="verificarExemplo('fake')" class="verify-btn">
+                    Verificar informação
+                </button>
+
+                <div id="resultado-fake" class="resultado"></div>
+
+            </div>
+
+
+            <div class="example-card true">
+
+                <div class="example-header">
+
+                    <span class="status true-status">
+                        ✅ VERDADE
+                    </span>
+
+                </div>
+
+                <h3>
+                    "A rotação de culturas pode ajudar na conservação do solo."
+                </h3>
+
+                <p>
+                    A diversificação de culturas pode contribuir para melhorar
+                    aspectos do solo e auxiliar no manejo agrícola.
+                </p>
+
+                <button onclick="verificarExemplo('true')" class="verify-btn">
+                    Verificar informação
+                </button>
+
+                <div id="resultado-true" class="resultado"></div>
+
+            </div>
+
+        </div>
+    </section>
+    <section id="identificar" class="section identify">
+        <div class="section-title"><span>🧠 COMO IDENTIFICAR</span>
+
+            <h2>
+                Aprenda a verificar uma informação.
+            </h2>
+
+        </div>
+        <div class="steps">
+            <div class="step">
+
+                <div class="step-number">01</div>
+
+                <h3>
+                    Pare
+                </h3>
+
+                <p>
+                    Não compartilhe imediatamente uma notícia.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">02</div>
+
+                <h3>
+                    Leia
+                </h3>
+
+                <p>
+                    Leia a informação completa e procure entender o contexto.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">03</div>
+
+                <h3>
+                    Pesquise
+                </h3>
+
+                <p>
+                    Procure a mesma informação em fontes confiáveis.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">04</div>
+
+                <h3>
+                    Compare
+                </h3>
+
+                <p>
+                    Compare as informações antes de compartilhar.
+                </p>
+
+            </div>
+
+        </div>
+    </section><!-- IA -->
+    <section id="ia" class="ai-section">
+        <div class="ai-box"><span class="ai-tag">
+                🤖 IA AGROVERDADE
+            </span>
+
+            <h2>
+                Verifique informações do agro com IA.
+            </h2>
+
+            <p>
+                Faça uma pergunta e a IA poderá pesquisar informações
+                atuais e analisar fontes disponíveis na internet.
+            </p>
+
+            <div class="ai-warning">
+                ⚠️ A IA é uma ferramenta de apoio. Sempre confira as fontes
+                apresentadas antes de tomar decisões.
+            </div>
+
+
+            <div class="chat">
+
+                <div id="chat-messages" class="chat-messages">
+
+                    <div class="ai-message">
+
+                        <div class="message-title">
+                            🤖 IA AgroVerdade
+                        </div>
+
+                        Olá! Faça uma pergunta sobre agricultura, pecuária,
+                        meio ambiente, tecnologia ou outro assunto relacionado
+                        ao agro.
+
+                    </div>
+
+                </div>
+
+
+                <div class="chat-input">
+
+                    <input type="text" id="pergunta" placeholder="Digite sua pergunta..." autocomplete="off"
+                        maxlength="4000">
+
+                    <button id="enviar-ia" onclick="perguntarIA()">
+                        Enviar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section id="quiz" class="section quiz-section">
+        <div class="section-title"><span>🎯 TESTE SEUS CONHECIMENTOS</span>
+
+            <h2>
+                Quiz AgroVerdade
+            </h2>
+
+            <p>
+                Descubra quanto você sabe sobre fake news.
+            </p>
+
+        </div>
+        <div class="quiz-box">
+            <div id="quiz-start">
+
+                <h3>
+                    Pronto para começar?
+                </h3>
+
+                <button onclick="iniciarQuiz()" class="btn">
+                    Começar quiz
+                </button>
+
+            </div>
+
+
+            <div id="quiz-content" style="display:none;">
+
+                <h3 id="pergunta-quiz"></h3>
+
+                <div id="opcoes"></div>
+
+                <div id="resultado-quiz"></div>
+
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <h3>
+                🌱 AgroVerdade
+            </h3>
+
+            <p>
+                Informação confiável para um agro mais consciente.
+            </p>
+
+            <p class="copyright">
+                © 2026 AgroVerdade
+            </p>
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
